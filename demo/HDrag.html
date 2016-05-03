@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>拖拉框</title>
+		<link rel="stylesheet" href="../css/resert.css" />
+		<link rel="stylesheet" href="../css/goalsetting.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-HDrag.js" ></script>
+	</head>
+	<body>
+		<div class="box" id="box">
+		<div id="text" class="text"></div>
+		<div class="bg" id="bg">
+		<div id="bt" class="bt"></div>
+		</div>
+		</div>
+		
+		<div class="box1" id="box1">
+		 <div id="text1" class="text"></div>
+		<div class="bg1" id="bg1">
+		<div id="bt1" class="bt1"></div>
+		</div>
+		</div>
+	</body>
+</html>
+<script>
+	
+	var per=new $S.HDrag({"locky":false,"initleft":0},ChageValue);
+	per.initValue();
+	function ChageValue(v){
+		//console.log(v.valuePerw)
+		$("#text").text(v.valuePerw);
+		console.log(v.valuePerw,per.getObj().perw)
+		$("#text").css("left",v.valuePerw*per.getObj().perw+'px');
+	}
+	
+	
+	var per1=new $S.HDrag({	"$box":"#box1","$bg":"#bg1","$btn":"#bt1","lockx":false,"inittop":0,"maxnum":50},ChageValue1);
+	per1.initValue();
+	function ChageValue1(v){
+		$("#text1").text(v.valuePerh);
+	}
+</script>

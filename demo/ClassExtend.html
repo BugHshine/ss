@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>原型继承的写法</title>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+   //继承
+	var Person=SamsungWeb.Class.extend({
+		  init:function(name){
+		  	  this.name=name;
+		  },
+		  getName:function(){
+		  	  return this.name;
+		  }
+	})
+	
+	
+	var Subperson=Person.extend({
+		  init:function(name,id){
+		  	 this._super(name);
+		  	 this.id=id;
+		  },
+		  getId:function(){
+		  	 //调用父类getName方法 
+		  	 return this.id+'***'+this._superpropertype.getName.apply(this);
+		  },
+		  //覆盖了父类getName方法 通过_super调用父类的同方法名
+		  getName:function(){
+		  	 return 'super  '+this._super();
+		  }
+	})
+	
+	
+	var  Subp=new Subperson("lihui","1234");
+	console.log(Subp.getName(),Subp.getId())
+	
+	
+	
+</script>

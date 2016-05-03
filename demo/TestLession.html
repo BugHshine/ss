@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试框架选择器</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js"></script>
+	</head>
+	<body>
+		<div class="test">断言测试数据类型:</div>
+		
+	</body>
+</html>
+<script>
+	  	var $lihui=SamsungWeb.noConflict()	
+	  		
+	  	var ss=new $lihui.Hassert();
+	    ss.test("A",function(){
+	    	ss.pause();
+	    	setTimeout(function(){
+	    		ss.assert(true,"frist");	
+	    	    ss.assert(true,"frist1");
+	    	    ss.assert(true,"frist2");
+	    	},1000)
+	    });
+	  	
+	  	var ss1=new $lihui.Hassert();
+	  	 ss1.test("B",function(){
+	    	ss1.pause();
+	    	setTimeout(function(){
+	    		ss1.assert(true,"Second");	
+	    	},1000)
+	    });	
+	  	//}
+</script>

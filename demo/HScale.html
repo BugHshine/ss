@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-HDetectResolution.js" ></script>
+	</head>
+	<body>
+		<div><img src="../img/main_kv_01.jpg" class="imgclass" relw="1920" relh="1080"></div>
+		<div><img src="../img/main_kv_01.jpg" class="imgclass" relw="1920" relh="1080"></div>
+		<div><img src="../img/main_kv_01.jpg" class="imgclass" relw="1920" relh="1080"></div>
+	</body>
+	<style>
+	   body,html{
+	   	margin:0;
+	   	padding:0;
+	   	width:100%;
+	   	height:100%;
+	   	overflow-x:hidden;
+	   	overflow-y:auto;
+	   }
+	   
+	   div{
+	   	 text-align:center;
+	   }
+	</style>
+	<script>
+	    var imgscale,imgscales;
+	    
+		$(document).ready(function(){
+			windowFun();
+		})
+		
+		function windowFun(){
+			imgscale=new $S.HResizeScale(1920,1080);
+			
+			window.onresize=function(){
+				imgscales=imgscale.getScale();
+				imgOnred();
+			}
+			
+			imgscales=imgscale.getScale();
+			imgOnred();
+		}
+		
+		function imgOnred(){
+			 var that=this;
+			 $(".view_img").each(function(){
+			 	   var b=$(this).attr("data-w")*that.imgscales,
+			 	   c=$(this).attr("data-h")*that.imgscales
+			 	   $(this).width(b).height(c);
+			 })
+			 
+			 $(".div_absolute").each(function(){
+			 	   var t=$(this).attr("data-t")*that.imgscales
+			 	   $(this).css({
+			 	   	"top":t+'px';
+			 	   })
+			 })
+			 
+		}
+		
+
+	</script>
+</html>

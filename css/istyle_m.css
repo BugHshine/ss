@@ -1,0 +1,180 @@
+.framework{
+	width:100%;
+    max-width: 1920px;
+	height:auto;
+	overflow:hidden;
+	min-height:100%;
+	min-width:1280px;
+	/*background:url(../img/bgcolor.jpg);*/
+	padding-bottom:2%;
+    margin: 0px auto;
+}
+
+.title_kv{
+	position:relative;
+	width:100%;
+	height:auto;
+	line-height:0;
+	text-align:center;
+	background:url(../images/bg.jpg) no-repeat;
+	background-size:100% auto;
+}
+
+.title_kv img{
+	max-width:100%;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+.framework .menu{
+	position:absolute;
+	width:1280px;
+	margin:0 auto;
+	height:80px;
+	background:#000000;
+	bottom:-40px;
+	left:50%;
+	margin-left:-640px;
+	
+}
+.framework .menu ul{
+	width:90%;
+	margin:0 auto;
+    overflow: hidden;
+}
+.framework .menu ul li{
+	float:left;
+	width:33%;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:22px;
+}
+
+.framework .menu ul li div{
+	 height:36px;
+	 line-height:36px;
+	 width:99%;
+	 border-right:1px solid #FFFFFF;
+	 margin-top:22px;
+}
+
+.framework .menu ul li div.lastdiv{
+	 height:36px;
+	 line-height:36px;
+	 width:99%;
+	 border-right:0px solid #FFFFFF;
+	 margin-top:22px;
+}
+
+.flvcontent{
+	width:100%;
+    height:100%;
+    max-height: 408px;
+	/*margin:60px auto;*/
+}
+
+.kv_txt{
+	width:75%;
+	margin:0 auto;
+	min-width:1280px;
+}
+
+.kv_txt img{
+	max-width:100%;
+	width:100%;
+	height:auto;
+	margin:0 auto;
+}
+
+.checknav{
+	width:1240px;
+	height:3px;
+	background:#000000;
+	margin:0 auto;
+}
+
+.kvt{
+	position:relative;
+	width:94%;
+	margin:10px auto 0px auto;
+	height:auto;
+}
+
+.kvt div{
+	float:left;
+	display:inline-block;
+    *display:inline;
+    *zoom:1;
+}
+
+.kvt .leftarrow,.kvt .rightarrow{
+	width:5%;
+	height:auto;
+	cursor:pointer;
+	
+	
+}
+
+.kvt .leftarrow img,.kvt .rightarrow img{
+	width:90%;
+	height:auto;
+	vertical-align:middle;
+}
+
+.centerdiv{
+	position:relative;
+	width:84%;
+	height:auto;
+	overflow:hidden;
+	margin:0 3% 0 3%;
+}
+
+.centerdiv ul li{
+    position:absolute;
+	text-align:center;
+	filter:alpha(opacity=100); /* IE */ 
+	-moz-opacity:1; /* Moz + FF */ 
+	opacity:1; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+	transition: opacity 1s;
+	-moz-transition: opacity 1s; /* Firefox 4 */
+	-webkit-transition: opacity 1s; /* Safari 和 Chrome */
+	-o-transition: opacity 1s; /* Opera */
+	cursor:pointer;
+}
+
+.centerdiv ul img{
+	max-width:35%;
+	width:35%;
+	height:auto;
+}
+
+
+.centerdiv ul li img{
+	max-width:94%;
+	width:94%;
+	height:auto;
+}
+
+
+
+.centerdiv ul li.on{
+	filter:alpha(opacity=100); /* IE */ 
+	-moz-opacity:1; /* Moz + FF */ 
+	opacity:1; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+}
+
+.onalpha0{
+	position:relative;
+	z-index:-1;
+	filter:alpha(opacity=0); /* IE */ 
+	-moz-opacity:0; /* Moz + FF */ 
+	opacity: 0; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+}
+
+.leftarrow.on,.rightarrow.on{
+	filter:alpha(opacity=0); /* IE */ 
+	-moz-opacity:0; /* Moz + FF */ 
+	opacity: 0; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+	cursor:inherit;
+}

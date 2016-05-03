@@ -1,0 +1,20 @@
+		     .padd{
+		     	height:800px;
+		     }
+		
+			 .bgColor{
+			 	 width:500px;
+			 	 height:500px;
+			 }
+			 
+			 .anim{
+				 -moz-transition: all 1s ease-in;
+		         -webkit-transition: all 1s ease-in;
+		         transition: all 1s ease-in;
+			 }
+			 
+			 .hoverColor{
+			 	width:100%;
+			 	height:100%;
+			 	background:#000000;
+			 }

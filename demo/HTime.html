@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TIME类</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+	</head>
+	<body>
+		 
+	</body>
+</html>
+<script>
+	 var stime=new $S.Htimer();
+	 
+	 //设置间隔时间
+	 //var lasttime=new Date().getTime();
+	 
+	 //stime.setLastTime(lasttime);
+	 
+	 //启动计时器
+	 stime.SetInter(1000);
+	
+	 stime.addListener(function(){
+	 	alert("eee");
+	 	//关闭侦听器
+	 	stime.removeListener();
+	 })
+</script>

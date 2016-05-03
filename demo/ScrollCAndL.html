@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ScrollCAndL</title>
+		<link rel="stylesheet" href="../css/resert.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-ScrollCAndL.js"></script>
+		<style>
+		     .padd{
+		     	height:800px;
+		     }
+		
+			 .bgColor{
+			 	 width:500px;
+			 	 height:500px;
+			 	 background:#FF9900;
+			 }
+			 
+			 .anim{
+				 -moz-transition: all 0.5s ease-in;
+		         -webkit-transition: all 0.5s ease-in;
+		         transition: all 0.5s ease-in;
+			 }
+			 
+			 .hoverColor{
+			 	background:#000000;
+			 }
+			 
+		</style>
+	</head>
+	<body>
+		<div class="padd">
+		<div class="bgColor anim  datalazyload">
+			
+			
+		</div>
+		</div>
+		
+		
+		<div class="padd">
+		<div class="bgColor anim datalazyload">
+			
+			
+		</div>
+		</div>
+		
+		
+		<div class="padd">
+		<div class="bgColor anim datalazyload">
+			
+			
+		</div>
+		</div>
+		
+		
+		<div class="padd">
+		<div class="bgColor anim datalazyload">
+			
+			
+		</div>
+		</div>
+		
+		
+		<div class="padd">
+		<div class="bgColor anim datalazyload">
+			
+			
+		</div>
+		</div>
+		
+		
+		<div class="padd">
+		<div class="bgColor anim datalazyload">
+			
+			
+		</div>
+		</div>
+	</body>
+</html>
+<script>
+    var h=new $S.ScrollCAndL({threshold:0},Testfn);
+    h.init();
+    h.addEvents();
+	function Testfn(b,mc){
+		//$S.log(b)
+		if(b){
+			 mc.addClass("hoverColor");
+		}else{
+			 mc.removeClass("hoverColor");
+		}
+	}
+</script>

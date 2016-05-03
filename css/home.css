@@ -1,0 +1,53 @@
+
+
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
+
+.node{
+    height: 100%;
+    left:0;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    width:100%;
+}
+.node.show{
+    display:block;
+    z-index:10;
+}
+
+.node.hide {
+    display:none;
+    z-index:5;
+}
+.node.active{
+    display:block;
+    z-index:15;
+}
+
+.m-img {
+    background-position:center center;
+    background-size:100% 100%;
+    height:100%;
+    width:100%;
+}
+
+.m-page01 {
+    background-color:#2a2b39;
+}
+
+.m-page02 {
+    background-color:#f5d800;
+}
+
+.m-page03 {
+    background-color:#99ff00;
+}
+
+.m-page04 {
+    background-color:#00f594;
+}

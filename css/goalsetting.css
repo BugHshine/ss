@@ -1,0 +1,22 @@
+.box{position:relative;width:360px;height:120px;border:1px solid #FFFFFF;top:100px;}
+
+.bg{width:100%;height:14px;margin-top:57px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;background:#dbdad4;}
+
+.bgcolor{background-color:#e86487;width:0px;height:14px;border-radius:10px;}
+
+.bt{width:10px;height:10px;border:3px solid #e86487; overflow: hidden; position: absolute; left:0px; margin-left:0px;top:57px; cursor: pointer;background:#FFFFFF;}
+
+
+.text{position:absolute;top:-32px;left:240px;margin-left:-13px;width:40px;font-size:30px;height:74px;text-align:center;line-height:2em;background:url(downsanjiao.png) no-repeat 50% 100%;font-size:30px;}
+
+
+.box1{position:relative;left:200px;width:120px;height:360px;border:1px solid #FFFFFF;}
+
+.bg1{width:14px;height:360px;margin-top:0px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;background:#dbdad4;}
+
+.bgcolor1{background-color:#e86487;width:0px;height:14px;border-radius:10px;}
+
+.bt1{width:30px;height:30px;border:3px solid #e86487; border-radius:50%; overflow: hidden; position: absolute; left:0px; margin-left:-11px;top:44px; cursor: pointer;background:#FFFFFF;}
+
+
+.text1{position:absolute;top:-32px;left:240px;width:40px;font-size:30px;height:74px;text-align:center;line-height:2em;background:url(downsanjiao.png) no-repeat 50% 100%;font-size:30px;}

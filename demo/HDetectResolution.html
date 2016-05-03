@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<title>CSSCHANGE</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-HDetectResolution.js" ></script>
+		<script>
+		
+		    
+			 $(document).ready(function(){
+			 	 if($S.LGlobal.os!="pc"){
+		     	    SamsungWeb.HDetectResolution.getInstance().HviewPort(720);
+		         }else{
+			 	 $(window).resize(function(){
+				    SamsungWeb.HDetectResolution.getInstance().CssChange();
+				 });
+	             
+			 	 SamsungWeb.HDetectResolution.getInstance().init("#csswarpper",[1440,1280,768]);
+			 	 }
+			 })
+			
+		</script>
+		<style>
+		   .bgcolor{
+		   	  width:300px;
+		   	  height:200px;
+		   	  background:#000000;
+		   }
+		
+		   .sam1440 .bgcolor{
+		   	    background:#7F1400;
+		   }
+		   
+		   
+		   .sam1280 .bgcolor{
+		   	     background:#ff9900;
+		   }
+		   
+		   
+		   .sam768 .bgcolor{
+		   	     background:#990000;
+		   }
+		   
+		  
+		</style>
+	</head>
+	<body>
+		<div id="csswarpper">
+			<div class="bgcolor">
+			    <img src="../img/1.jpg">
+			</div>
+		</div>
+	</body>
+</html>

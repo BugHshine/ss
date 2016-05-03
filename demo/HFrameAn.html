@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>360度帧动画控制</title>
+		<link rel="stylesheet" href="../css/resert.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-HFrameAn.js" ></script>
+	</head>
+	<style>
+	   #An{
+	   	  position:relative;
+	   	  z-index:999;
+	   }
+	
+	   .HframeAn div{
+	   	  display:none;
+	   }
+	   
+	   .HframeAn div.on{
+	   	  display:block;
+	   }
+	   
+	   
+	   .HframeAn div img{
+	   	   -webkit-transform-origin:50% 50%;
+	   }
+	   
+	   
+	   #Mb{
+	   	  position:relative;
+	   	  z-index:99;
+	   	
+	   }
+	</style>
+	<body>
+		<div class="HframeAn" id="An">
+			
+		</div>
+	    <div class="HframeAn" id="Mb">
+			
+		</div>
+	</body>
+</html>
+<script>
+    var s=new $S.HFrameAn({
+    	frametotal:52,
+    	imgPath:'../img/assets/',
+    	zeroBased:""
+    })
+    
+    
+    s.progress=function(per){
+    	//console.log(per)
+       	
+    }
+    
+    
+    s.complete=function(){
+    	//s.AutoPlay();
+    }
+    
+    var ss=new $S.HFrameAn({
+    	 id:"#Mb"
+    })
+    
+    
+    ss.progress=function(per){
+    	//console.log("per",per)
+       	
+    }
+    
+    
+    ss.complete=function(){
+    	//ss.AutoPlay();
+    }
+    
+</script>

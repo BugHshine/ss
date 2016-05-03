@@ -1,0 +1,76 @@
+@charset "utf-8";
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td, img {
+    border: 0 none;
+    padding: 0;
+    margin:0;
+}
+
+html, body {
+    background-color:#FFFFFF;
+    font-family:"微软雅黑";
+    font-size:62.5%;
+    width:100%;
+	height:auto;
+}
+ol, ul, li {
+    list-style-type: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+fieldset, img {
+    border: 0 none;
+}
+img {
+    list-style: outside none none;
+    border:none;
+}
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+caption, th {
+    text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+h2 {
+    font-size: 14px;
+    font-weight: bold;
+}
+q:before, q:after {
+}
+abbr, acronym {
+    border: 0 none;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+a.t_link1, a.t_link1:hover, a.t_link1:active {
+    color: #7f1400;
+}
+
+a{
+text-decoration:none
+}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+.hide{
+	display:none;
+}
+
+.show{
+	display: none;
+}

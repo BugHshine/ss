@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>正则类</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-HregExp.js" ></script>
+	</head>
+	<body>
+		<div class="show"></div>
+	</body>
+</html>
+<script>
+    var str=" fewfwff wefweff wefe "
+    //去掉前后空格
+	var str1=$S.HregExp.trim(str);
+	
+	//去掉所有空格
+    var str2=$S.HregExp.alltrim(str);
+	
+	var email='dwdw.@163.com';
+	
+	var str3=$S.HregExp.matchEmail(email);
+	
+	//console.log(str1)
+	$S._S('.show').append('<p>'+str1+'</p>');
+	$S._S('.show').append('<p>'+str2+'</p>');
+	$S._S('.show').append('<p>'+str3+'</p>');
+	
+
+    //取 URL ID 有2种模式  直接取你想要ID   
+    var str4=$S.HregExp.getQueryString("id");
+    $S._S('.show').append('<p>'+str4+'</p>');
+    
+    //取出全部的参数
+     var str5=$S.HregExp.getQueryString();
+     
+     $S._S('.show').append('<p>'+str5.id2+'</p>');
+</script>

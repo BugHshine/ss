@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BIND</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js"></script>
+	</head>
+	<body>
+		 <div id="buttonss">点击我dddddddddddd</div>
+		 <div id="showdiv">this</div>
+	</body>
+</html>
+<script>
+   var buttonfun={
+   	   clicked:false,
+   	   clicks:function(){
+   	   	   console.log(this.clicked,arguments)
+   	   }
+   }
+   var dd=document.getElementById("buttonss");
+   var dds=document.getElementById("showdiv");
+   dd.addEventListener("click",function(){
+   	   $S.Hbind(buttonfun,"clicks","hahha");
+   },false);
+</script>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>KV模块</title>
+		<link rel="stylesheet" href="../css/resert.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+		<script type="text/javascript" src="../js/easing.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-Hkv.js"></script>
+		<style>
+			.kv,.kv1{
+         	position:relative;
+         	width:100%;
+         	height:auto;
+         	overflow:hidden;
+         }
+         
+         .kv1 ul li{
+         	width:100%;
+         	height:auto;
+         	position:absolute;
+         	top:0;
+         	left:0;
+         	display:none;
+         	opacity:0;
+         }
+         
+         .kv ul li{
+         	width:100%;
+         	height:auto;
+         	position:absolute;
+         	top:0;
+         	left:0;
+         	display:none;
+         }
+         
+         img{
+         	max-width:100%;
+         	width:100%;
+         	height:auto;
+         }
+         
+         .kv ul .current{
+         	display:block;
+         }
+         
+         .kv1 ul .current{
+         	display:block;
+         	opacity:1;
+         }
+			
+		</style>
+	</head>
+	<body>
+	     <div class="kv">
+        	<ul>
+        		<li class="current"><img src="../img/main_kv_01.jpg"></li>
+        		<li><img src="../img/main_kv_02.jpg"></li>
+        		<li><img src="../img/main_kv_03.jpg"></li>
+        	</ul>
+        </div>
+	</body>
+	<script type="text/javascript">
+	    var kv=new $S.HanimateKv({id:'.kv',class1:'current',type:"ToptoLAn"});
+		kv.setInter();	
+	</script>
+</html>

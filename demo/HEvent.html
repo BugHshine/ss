@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HEvent</title>
+		<script type="text/javascript" src="../js/jquery-1.11.0.min.js" ></script>
+		<script type="text/javascript" src="../js/SamsungWeb-1.0.0.js" ></script>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	var ev=new $S.HEvent();
+	
+	ev.add("alert",function(e){
+		$S.log(e)
+	},"haha","fffefe")
+	
+	ev.add("alert",oo,"haha1","fffefe2")
+	
+	function oo(e){
+		$S.log(e)
+		
+	}
+
+
+//  /ev.removeEvent("alert",oo);
+	ev.dispatchEvent("alert")
+	
+</script>
